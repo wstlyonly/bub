@@ -1,0 +1,276 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffdfdf;
+  color: #fff6f6;
+  font-family: sans-serif;
+}
+
+.card {
+  height: 500px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 40px;
+  background: rgba(248, 117, 170, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+  padding: 20px; /* Added padding to avoid text sticking to the edges */
+}
+
+p {
+  font-size: 15px;
+  padding: 10px;
+  font-family: cursive;
+  text-align: center; /* Ensure text is centered */
+}
+
+h1 {
+  padding: 10px;
+  color: #f875aa;
+  letter-spacing: 5px;
+  text-align: center; /* Ensure the heading is centered */
+}
+
+img {
+  height: 400px;
+  width: 350px;
+  position: absolute;
+  top: 140px;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hearts floating animation */
+.heart {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) scale(1.2);
+    opacity: 0;
+  }
+}
+
+.heart:nth-child(1) {
+  left: 10%;
+  animation-duration: 5s;
+  animation-delay: 0s;
+}
+
+.heart:nth-child(2) {
+  left: 20%;
+  animation-duration: 6s;
+  animation-delay: -1s;
+}
+
+.heart:nth-child(3) {
+  left: 30%;
+  animation-duration: 7s;
+  animation-delay: -2s;
+}
+
+.heart:nth-child(4) {
+  left: 40%;
+  animation-duration: 5s;
+  animation-delay: -3s;
+}
+
+.heart:nth-child(5) {
+  left: 50%;
+  animation-duration: 6s;
+  animation-delay: -4s;
+}
+
+.heart:nth-child(6) {
+  left: 60%;
+  animation-duration: 7s;
+  animation-delay: -5s;
+}
+
+.heart:nth-child(7) {
+  left: 70%;
+  animation-duration: 5s;
+  animation-delay: -6s;
+}
+
+.heart:nth-child(8) {
+  left: 80%;
+  animation-duration: 6s;
+  animation-delay: -7s;
+}
+
+.heart:nth-child(9) {
+  left: 90%;
+  animation-duration: 7s;
+  animation-delay: -8s;
+}
+
+.heart:nth-child(10) {
+  left: 50%;
+  animation-duration: 5s;
+  animation-delay: -9s;
+  transform: translateX(-50%);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .card {
+    width: 280px;
+    height: 400px;
+    padding: 15px; /* Reduce padding on smaller screens */
+  }
+
+  h1 {
+    font-size: 20px; /* Adjust heading size for smaller screens */
+    letter-spacing: 3px;
+  }
+
+  p {
+    font-size: 14px; /* Adjust paragraph font size */
+  }
+
+  img {
+    height: 300px;
+    width: 280px;
+    top: 120px;
+  }
+
+  .heart {
+    width: 50px;
+    height: 50px;
+  }
+
+  .heart:nth-child(1) {
+    left: 15%;
+  }
+
+  .heart:nth-child(2) {
+    left: 25%;
+  }
+
+  .heart:nth-child(3) {
+    left: 35%;
+  }
+
+  .heart:nth-child(4) {
+    left: 45%;
+  }
+
+  .heart:nth-child(5) {
+    left: 55%;
+  }
+
+  .heart:nth-child(6) {
+    left: 65%;
+  }
+
+  .heart:nth-child(7) {
+    left: 75%;
+  }
+
+  .heart:nth-child(8) {
+    left: 85%;
+  }
+
+  .heart:nth-child(9) {
+    left: 95%;
+  }
+
+  .heart:nth-child(10) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 250px;
+    height: 350px;
+    padding: 10px; /* Further reduce padding on very small screens */
+  }
+
+  h1 {
+    font-size: 18px; /* Adjust font size further */
+    letter-spacing: 2px;
+  }
+
+  p {
+    font-size: 12px; /* Adjust font size for mobile */
+  }
+
+  img {
+    height: 250px;
+    width: 240px;
+    top: 100px;
+  }
+
+  .heart {
+    width: 40px;
+    height: 40px;
+  }
+
+  .heart:nth-child(1) {
+    left: 15%;
+  }
+
+  .heart:nth-child(2) {
+    left: 25%;
+  }
+
+  .heart:nth-child(3) {
+    left: 35%;
+  }
+
+  .heart:nth-child(4) {
+    left: 45%;
+  }
+
+  .heart:nth-child(5) {
+    left: 55%;
+  }
+
+  .heart:nth-child(6) {
+    left: 65%;
+  }
+
+  .heart:nth-child(7) {
+    left: 75%;
+  }
+
+  .heart:nth-child(8) {
+    left: 85%;
+  }
+
+  .heart:nth-child(9) {
+    left: 95%;
+  }
+
+  .heart:nth-child(10) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
