@@ -22,20 +22,45 @@
           tamad ko sa buhay HAHAHA at salamat din kase kahit nakakapagod akong
           mahalin nandyan ka parin di mo pinaparamdam sakin na mag-isa lang ako
           kaya thankful ako kase ikaw yung babaeng minahal ko. Pasensya di kita
-          mailalabas ngayon sa special day natin kaya eto lang muna pambawi ko
+          mailalabas ngayong sa special day natin kaya eto lang muna pambawi ko
           sayo sana magustohan mo kahit papano😅. I LOVE YOU!
         </p>
+        <button class="play-button" id="playButton">Play</button>
+
+        <!-- Audio element (hidden initially) -->
+        <audio
+          id="audio"
+          src="Balisong [z-j-sGJEQ-U] (mp3cut.net).mp3"
+          preload="auto"
+        ></audio>
       </div>
     </div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+    <div class="heart">❤️</div>
+
+    <script>
+      // Get the play button and audio element
+      const playButton = document.getElementById("playButton");
+      const audio = document.getElementById("audio");
+
+      // Add click event to the button
+      playButton.addEventListener("click", function () {
+        // Play the audio when the button is clicked
+        audio.play();
+
+        // Change the button text when music starts playing
+        playButton.textContent = "Playing...🎵";
+        playButton.disabled = true; // Disable the button once clicked (optional)
+      });
+    </script>
   </body>
-  <div class="heart">❤️</div>
-  <div class="heart">❤️</div>
-  <div class="heart">❤️</div>
-  <div class="heart">❤️</div>
-  <div class="heart">❤️</div>
-  <div class="heart">❤️</div>
-  <div class="heart">❤️</div>
-  <div class="heart">❤️</div>
-  <div class="heart">❤️</div>
-  <div class="heart">❤️</div>
 </html>
+
