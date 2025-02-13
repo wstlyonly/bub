@@ -30,7 +30,7 @@ body {
 p {
   font-size: 15px;
   padding: 10px;
-  font-family: cursive;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center; /* Ensure text is centered */
 }
 
