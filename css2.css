@@ -24,21 +24,21 @@ body {
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
   border-radius: 10px;
-  padding: 20px; /* Added padding to avoid text sticking to the edges */
+  padding: 20px; 
 }
 
 p {
   font-size: 15px;
   padding: 10px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center; /* Ensure text is centered */
+  text-align: center; 
 }
 
 h1 {
   padding: 10px;
   color: #f875aa;
   letter-spacing: 5px;
-  text-align: center; /* Ensure the heading is centered */
+  text-align: center;
 }
 
 img {
@@ -55,7 +55,7 @@ img {
   justify-content: center;
 }
 
-/* Hearts floating animation */
+
 .heart {
   width: 70px;
   height: 70px;
@@ -149,21 +149,21 @@ img {
   background-color: #f63e84;
 }
 
-/* Media Queries for Responsiveness */
+
 @media (max-width: 768px) {
   .card {
     width: 280px;
     height: 500px;
-    padding: 15px; /* Reduce padding on smaller screens */
+    padding: 15px; 
   }
 
   h1 {
-    font-size: 20px; /* Adjust heading size for smaller screens */
+    font-size: 20px;
     letter-spacing: 3px;
   }
 
   p {
-    font-size: 14px; /* Adjust paragraph font size */
+    font-size: 14px; 
   }
 
   img {
